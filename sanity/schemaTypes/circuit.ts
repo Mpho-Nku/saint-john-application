@@ -56,7 +56,7 @@ export const circuit = defineType({
         }),
         defineField({
             name:'pitch',
-            type:'markdown',
+            type:'text',
            
         }),
         
