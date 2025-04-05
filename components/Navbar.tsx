@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { auth, signOut, signIn } from "@/auth";
-
-
+import Footer from "./Footer";
 
 const Navbar = async () => {
   const session = await auth();
@@ -34,10 +33,14 @@ const Navbar = async () => {
                 
                 </button>
               </form>
-
-              <Link href={`/user/${session?.id}`}>
-               <span>{session?.user?.name}</span>
-              </Link>
+              {session?.user?.id ? (
+  <Link href={`/user/${session.user.id}`}>
+    <span>{session.user.name}</span>
+  </Link>
+) : (
+  <span>{session.user.name}</span>
+)}
+ 
             </>
           ) : (
             <form
@@ -52,8 +55,10 @@ const Navbar = async () => {
           )}
         </div>
       </nav>
+      
     </header>
+    
   );
+  
 };
-
 export default Navbar;

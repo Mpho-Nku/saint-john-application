@@ -1,0 +1,84 @@
+/* styles/church.module.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #1e3a8a; /* Deep Blue */
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: #1e3a8a;
+  border-bottom: 2px solid #1e3a8a;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #1e3a8a;
+}
+
+a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  background-color: #1e3a8a;
+  color: white;
+  border-radius: 10px;
+}

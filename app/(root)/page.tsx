@@ -4,7 +4,7 @@ import CircuitCard from "@/components/CircuitCard";
 import { client } from "@/sanity/lib/client";
 import { CIRCUITS_QUERY } from "@/sanity/lib/queries";
 import { CircuitCardType } from "@/components/CircuitCard";
-
+import Footer from "@/components/Footer";
 import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 export default async function Home({searchParams}:{
   searchParams: Promise<{query?: string}>
@@ -40,8 +40,9 @@ export default async function Home({searchParams}:{
           )}
         </ul>
       </section>
-
+     
       <SanityLive/>
+    
 
       
      

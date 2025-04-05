@@ -17,6 +17,7 @@ export const CIRCUITS_QUERY =
 export const CIRCUIT_BY_ID_QUERY= 
 defineQuery(`*[_type == "circuit" && _id==$id][0]{
     title,
+    _id,
     slug, 
     bishop,
     views,
