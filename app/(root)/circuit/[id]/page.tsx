@@ -3,7 +3,6 @@ import { client } from "@/sanity/lib/client";
 import { formatDate } from "@/lib/utils";
 import { CIRCUIT_BY_ID_QUERY } from '@/sanity/lib/queries';
 import Link from '@/node_modules/next/link';
-import { MdLocationOn } from "react-icons/md";
 import { auth, signOut, signIn } from "@/auth";
 const page = async ({params}:{params:Promise<{id: string}>}) => {
   
@@ -100,7 +99,9 @@ const page = async ({params}:{params:Promise<{id: string}>}) => {
       </div>
     
     </div>
+
   </section>
+  
 
       </section>
   
